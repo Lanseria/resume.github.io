@@ -1,0 +1,31 @@
+.scroll-tab{
+  position: fixed;
+  bottom: 61%;
+  left: 0;
+  height: 34px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #666;
+  opacity: 0.5;
+  background-color: #f8f8f8;
+  z-index: 100;
+  transition: all 0.6s;
+}
+.scroll-tab:hover{
+  opacity: 1;
+}
+.scroll-tab .tab-item{
+  /* float: left; */
+  font: 14px/34px "微软雅黑";
+  height: 34px;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  padding: 0 20px;
+  background-color: #fff;
+}
+.scroll-tab .active{
+  /* color: #00be3c; */
+  color: #181818;
+  background-color: #e5e5e5;
+  border-left: 2px solid #181818;
+  box-sizing: border-box;
+}

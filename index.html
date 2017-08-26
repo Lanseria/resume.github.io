@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/jquery.fullpage.css" />
+  <link rel="stylesheet" href="./css/bubble.css" />
+  <link rel="stylesheet" href="./css/material.css" />
+  <link rel="stylesheet" href="./css/tab.css" />
+  <style>
+    body {
+      color: #444;
+    }
+
+    .section {
+      background-color: whitesmoke;
+      text-align: center;
+    }
+
+    .slide {
+      text-align: center;
+    }
+
+    .entry {}
+
+    .entry h1 {
+      font-size: 5vw;
+      margin-bottom: 20px;
+    }
+
+    .info .wrap {
+      position: relative;
+      display: inline-block;
+    }
+
+    .info .me {
+      height: 50vh;
+    }
+
+    .exp .content {
+      display: inline-block;
+      width: 80%;
+      border: 2px solid #666;
+    }
+
+    .exp .content h1 {
+      margin-bottom: 5px;
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 5px;
+      text-align: left;
+      border-bottom: 1px solid #666;
+    }
+
+    .exp .content .detail {
+      font-size: 100px;
+      margin: 70px 0;
+    }
+
+    .proj .row {
+      display: inline-block;
+    }
+
+    .proj .led {
+      height: 60vh;
+      width: auto !important;
+    }
+
+    .proj a {
+      color: #f8f8f8;
+    }
+
+    .proj .art {
+      height: 60vh;
+      width: auto !important;
+    }
+
+    .honor .logo {
+      width: 30vw;
+    }
+
+    .honor h1 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .sum .slide .row {
+      text-align: left;
+      width: 80vw;
+      margin: 0 auto;
+    }
+
+    .sum h1 {
+      text-align: left;
+      font-size: 30px;
+      padding: 5px 0;
+      margin: 5px;
+      border-bottom: 2px solid #444;
+    }
+
+    .sum p {
+      text-align: left;
+      line-height: 2;
+    }
+
+    .sum .timg {
+      height: 100%;
+    }
+
+    .sum .poster {
+      width: 100%;
+    }
+
+    .mask {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      resize: vertical;
+      justify-content: center;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.89);
+      z-index: 500;
+    }
+
+    .bg-blur {
+      float: left;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      -webkit-filter: blur(15px);
+      -moz-filter: blur(15px);
+      -o-filter: blur(15px);
+      -ms-filter: blur(15px);
+      filter: blur(15px);
+    }
+
+    .mask .table {
+      resize: vertical;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fullpage">
+    <div class="section entry">
+      <h1>张超的前端攻城狮简历（单页）</h1>
+      <h2> GitHub 地址:</h2>
+      <a href="https://github.com/Lanseria" target="_black">https://github.com/Lanseria</a>
+    </div>
+    <div class="section info">
+      <!-- <h1>个人信息</h1> -->
+      <div class="content">
+        <div class="wrap">
+          <img class="me" src="./img/11.png" />
+        </div>
+      </div>
+    </div>
+    <div class="section exp">
+      <div class="content">
+        <h1>工作经历</h1>
+        <div class="detail">_Black</div>
+      </div>
+    </div>
+    <div class="section proj">
+      <div class="slide">
+        <div class="row">
+          <div class="col s12 m10">
+            <div class="cuscard">
+              <div class="cuscard-image">
+                <img class="led" src="./img/1.png">
+                <span class="cuscard-title"><a target="_black" href="https://github.com/Lanseria/smart_led">智能家居vue页面(Click)</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="row">
+          <div class="col s12 m10">
+            <div class="cuscard">
+              <div class="cuscard-image">
+                <img class="art" src="./img/2.jpg">
+                <span class="cuscard-title"><a target="_black" href="https://github.com/Lanseria/art_college">艺术学院纯HTML(Click)</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section honor">
+      <div class="slide">
+        <img class="logo" src="./img/Logo_T_10.png" alt="计算机设计大赛logo">
+        <h1>计算机设计大赛</h1>
+        <ul>
+          <li>2017届国赛三等</li>
+          <li>2017届省赛二等</li>
+          <li>2016届省赛三等</li>
+        </ul>
+      </div>
+      <div class="slide">
+        <h1>其它奖项</h1>
+        <ul>
+          <li>2015届蓝桥杯二等</li>
+          <li>校内非比赛奖项</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section sum">
+      <div class="slide">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <h1>前言</h1>
+            <p>
+              本人姓张名超，大家都叫我超哥，不过亲切的还是会叫我超超。
+            </p>
+            <p>
+              喜欢极客的生活方式，不过都是一些小爱好，没有什么大成就。
+            </p>
+            <p>
+              Github: <a href="https://github.com/Lanseria" target="_black">https://github.com/Lanseria</a>
+            </p>
+            <p>
+              个人的视频站: <a href="http://i.youku.com/zhangchao564265135">http://i.youku.com/zhangchao564265135</a>
+            </p>
+            <p>
+              视频站中，记录从我高三开始的制作视频历程，从一开始上传PS视频教程，学习PS，再到大学生活开始后，细学了一些PR，AE等Adobe软件，自己空闲制作的动画，微电影之类的作品。不过都不是特别的完美。到后来开始录制自己的编程视频教程，自己尝试着做老师，为大一，大二讲解一些计算机编程方面的基础知识等等。
+
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <img class="timg" src="./img/timg.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="row">
+          <div class="col-lg-8 col-md-12">
+            <h1>第二部分</h1>
+            <p>
+              个人在高三无聊的时候做过一些现在看来有些不可思议的事。可能是对设计的一些热爱吧。高三的上学期，学习可能太累，父母也没有太多管束，我就会偶尔用下姐姐的笔记本蹭网上贴吧了解下PS，什么易语言等等，那时不懂什么是编程，所以没学进去。但是PS还是有些程度，所以就在快要过圣诞节的时候，在Ps上做了一幅有关Apple与圣诞相关的电子黑板报，并打印了出来，并偷偷地在周日下午，一个人去自己班的前面的黑板前，粗糙的画下了这个我自己认为还是很好看的节日主题。
+            </p>
+            <p>
+              顺便将在义乌小商品店买的雪花片，贴在了窗上。等一切任务都完成后，看着整个教室都散发着圣诞的味道，我心里也开心了不少，后来的几天，别的班也自己挂起来雪花片，那时我也暗暗自喜，虽然没有跟班级人说，这个是我弄的，主要也是因为怕挨骂。现在想想那时的我真是天真呐。
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <img class="poster" src="./img/poster.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="now">
+
+              <h1>第三部分</h1>
+              <p>不说高中了，就因为这些事，大学没考好</p>
+              <p>在大学，上了离家挺远的学校，环境就那个地方而言，算是不错了，但跟我家相比，那就简直差远了。没错，就是郑州。</p>
+              <p>
+                不过环境差也没法自己拜托，好好学习才是真的。大一开始看现在，转眼间，自己就是快要毕业的人了，可以说，既然学了计算机，就不能比不学计算机的差，和老师做过的项目也不多，一般都是自己一个人完成，最多别人写写技术文档，相较于写文档，我还是喜欢空余时间学学新技术的。但也没法子，实验室没有搞这类技术的，我说的可以是PHP，也可以是Node。所以不管是参加比赛，还是从老师那儿拿到一些助研费，还是公司的补助，都是我一个人在自己默默的学，不懂了google,看看技术文档。所以一般的问题都能很快解决。如果你问我实验室都在学些什么，有Java，C#，硬件的都是写单片机，或者用用买回来的无人机，看起来挺叼的，但也就是在别人写好的基础上，自己改改东西，焊焊电路，真正的硬件牛人还是要挺过一些尝试期，软硬件都十分精通才可以，所以，我放弃了硬件。
+
+              </p>
+              <p>如果要问我会点什么，我这边可以总结下，会的都不精，但是在努力学精，比如大一的C语言，从结构体到指针，大三暑假又复习了一遍，会了一点网络的编程与线程。
+              </p>
+              <p>
+                JAVA碰过，那也只是碰过，大三快结束的时候，学着它做了个andriod的应用，很简单，就是为了与硬件进行TCP通信，结果到界面线程那儿懵逼了。所以没走下去。
+
+              </p>
+              <p>
+                C#也是大一学长教的那些，写过简单的管理宿舍的网页，github上有。主要在之后也同样跟java一样捡了起来，用做TCP服务器的搭建，客户端的连接等等CS应用。
+
+              </p>
+              <p>
+                其实在大二，我主要学的是PHP，因为太简单，所以在同届中，我不仅能很快的开发出一个网站，前端也在同时学了差不多，包括数据库，linux也一块儿学完了，现在想想真是可怕，兴趣真的很重要吖，不知道我是怎么学完它们的。同时，带着它去参加了计算机设计大赛，不过成绩不怎样，不过现在看来其实这类比赛并没有多大重要，还是学点基础重要些。参与比赛的是二手交易平台，github上有。
+
+              </p>
+            </div>
+            <a href="#" onclick="showmore(this);">阅读下文</a>
+            <div class="more" style="display: none;">
+
+              <p>
+                接着开始用同一个框架TP3.2，做过好几个项目，像报名系统，这个不说了，但是当时实在想不出其它方法，所以想出如此糟糕的方案，以后必定重写一份。还有老师想的考试系统，这个还是具有一定挑战性的，我个人也比较满意，因为学到了许多新知识。接下来就是接到公交公司的微信公众号的项目，学了几个月的微信公众号，但是没谈下来，还是因为没有什么项目经验。
+              </p>
+              <p>
+                接着，就是有一天，开始学习新的框架，听说国外PHP框架laravel用的十分多，于是开始学习，一开始，哇，哭了，完全跟TP不一样吖，好复杂，语法糖好多，记得东西更多，干脆放弃，不过同时了解到laravel其实要与node.js相结合，所以想略微学习下node.js
+                不过这一学就不可收拾。完全被js的魅力迷住，然后就没了下文。
+              </p>
+              <p>
+                结合着这些内容，我开发了阿里大于的短信API，cheerio的抓包，室友的C暴力算法，加上上面那两个php项目，合成一个社团管理系统，又去参加了比赛，或者省赛二等，国赛三等的小成绩。看了比赛才知道，哎，也就那样。
+
+              </p>
+              <p>
+                以上，我几乎已经把我大学三年的事加上高中的事讲完了一遍。现在在找找前端工作，甚至全栈或者PHP工程师，不过以我现在的能力，肯定die在第一轮，基础不行。所以，现在的我正在学习着React这个全栈框架，顺便复习着js内容，并打算接触下koa下一代的网站框架，顺便学习下callback
+                hell 这个到底怎么解决，有哪些解决方案，那些方案具体怎么实现的，这都可是要在面试或者笔试中问到的。计划呢，在我以后真正工作赚钱了，我一定先买一台macbook pro用来敲代码，毕竟是程序员，没那个不行的。等这些都搞完了，开始学习人工智能，这些颇有远见的技术。哇，可能哦。
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tag -->
+  <div class="mask" onclick="javascript:tg(this);" style="display: none;">
+    <div class="row" style="text-align: center;
+      width: 60%;
+      margin: 0 auto;">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Props</th>
+            <th>Value</th>
+            <th>notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>姓名</td>
+            <td>张超</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>电话</td>
+            <td>18858395625</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Email</td>
+            <td>564265135@qq.com</td>
+            <td>zhangchao564265135@hotmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>地址</td>
+            <td>浙江舟山</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>毕业学校</td>
+            <td>郑州轻工业学院</td>
+            <td>none</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <ul class="scroll-tab clearfix" id="myMenu">
+    <li class="tab-item active" data-menuanchor="entry"><a href="#entry">主页</li>
+      <li class="tab-item tab-active" data-menuanchor="info"><a href="#info">个人信息</li>
+      <li class="tab-item" data-menuanchor="exp"><a href="#exp">工作经历</li>
+      <li class="tab-item" data-menuanchor="proj"><a href="#proj">作品展示</li>
+      <li class="tab-item" data-menuanchor="honor"><a href="#honor">荣誉列表</li>
+      <li class="tab-item" data-menuanchor="sum"><a href="#sum">个人总结</li>
+    </ul>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/scrolloverflow.min.js"></script>
+  <script src="./js/jquery.fullpage.js"></script>
+  <script>
+    var p = 1;
+    function showmore (e){
+      var fir = document.querySelector('.now');
+      var sec = document.querySelector('.more');
+      if(p == 1){
+        fir.style.display = 'none';
+        sec.style.display = 'block';
+        e.innerHTML = '返回';
+        p = 2;
+      }else{
+        fir.style.display = 'block';
+        sec.style.display = 'none';
+        e.innerHTML = '阅读下文';
+        p = 1;
+      }
+    }
+    function showinfo (e){
+      document.querySelector('.mask').style.display = 'flex';
+    }
+    function tg(e){
+      e.style.display = 'none';
+    }
+    $(document).ready(function () {
+      
+      $('#fullpage').fullpage({
+        sectionColor: ['whitesmoke'],
+        anchors: ['entry', 'info', 'exp', 'proj', 'honor', 'sum'],
+        controlArrows: false,
+        paddingTop: 0,
+        paddingBottom: 0,
+        fixedElements: null,
+        // continuousVertical: true,
+        navigation: true,
+        navigationPostion: 'right',
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        menu: '#myMenu',
+        scrollOverflow: true
+      });
+    })
+  </script>
+  <script src="./js/bubble.js"></script>
+  
+  <script>
+    createBubble("80%", "-20%", "超超在这里，向你们问好啦~", document.querySelector('.wrap'), "rgba(130, 130, 130, 0.41)");
+    createBubble("-24%", "-12%", "ヽ（≧□≦）ノ不要问我住在哪里，我是不会告诉你们我的家是在一座美丽的岛上的。(❤ ω ❤)", document.querySelector('.wrap'),
+      "rgba(130, 130, 130, 0.41)");
+    createBubble("80%", "85%", '如果你想了解更多的信息可以点<a href="#" onclick="showinfo(this);">这里</a>', document.querySelector('.wrap'),
+      "rgba(130, 130, 130, 0.41)");
+      </script>
+</body>
+
+</html>

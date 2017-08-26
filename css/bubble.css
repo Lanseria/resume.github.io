@@ -1,0 +1,40 @@
+.bubble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgba(0, 132, 208, 0.41);
+  border-radius: 10px;
+  min-width: 20vh;
+  max-width: 25vh;
+  min-height: 3vh;
+  font-size: 2vh;
+  line-height: 3vh;
+  color: #FFF;
+  text-align: center;
+  margin-left: -0.4rem;
+  margin-top: -1.6rem;
+  z-index: 100;
+}
+
+/* .bubble:before {
+  position: absolute;
+  content: "";
+  right: 100%;
+  top: 1rem;
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-right: 0.6rem solid #33AAEE;
+  border-bottom: 0.6rem solid transparent;
+  border-left: 0.6rem solid transparent;
+} */
+
+.bubble .text {
+  display: inline-block;
+}
+
+.bubble p {
+  margin: 1vh 1vw;
+  word-wrap: break-word;
+  text-align: left;
+}
